@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+      "target": "http://172.23.3.128:8300/CRMUtilServicesV1",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+  }
+}

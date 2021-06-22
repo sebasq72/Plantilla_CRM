@@ -1,0 +1,233 @@
+<div class="row">
+  <div class="column_small rightLine">
+
+    <h1>Sitio</h1>
+    <hr>
+
+    <form
+      [formGroup]="rForm"
+      (ngSubmit)="onSubmitTest(rForm.value)"
+      class="form"
+      novalidate
+    >
+      <mat-form-field class="form-element">
+        <mat-label>idUser</mat-label>
+        <input
+          matInput
+          #inputidUser
+          maxlength="20"
+          formControlName="idUser"
+          placeholder="idUser"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>urlReturn</mat-label>
+        <input
+          matInput
+          #inputurlReturn
+          maxlength="500"
+          placeholder="urlReturn"
+          formControlName="urlReturn"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>idHeader</mat-label>
+        <input
+          matInput
+          #inputidHeader
+          maxlength="20"
+          formControlName="idHeader"
+          placeholder="idHeader"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>idTurn</mat-label>
+        <input
+          matInput
+          #inputidTurn
+          maxlength="20"
+          formControlName="idTurn"
+          placeholder="idTurn"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>documentType</mat-label>
+        <input
+          matInput
+          #inputdocumentType
+          maxlength="20"
+          formControlName="documentType"
+          placeholder="documentType"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>documentNumber</mat-label>
+        <input
+          matInput
+          #inputdocumentNumber
+          maxlength="20"
+          formControlName="documentNumber"
+          placeholder="documentNumber"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>account</mat-label>
+        <input
+          matInput
+          #inputaccount
+          maxlength="20"
+          formControlName="account"
+          placeholder="account"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>source</mat-label>
+        <input
+          matInput
+          #inputsource
+          maxlength="20"
+          formControlName="source"
+          placeholder="source"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>min</mat-label>
+        <input
+          matInput
+          #inputmin
+          maxlength="20"
+          formControlName="min"
+          placeholder="min"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>SuscriptionState</mat-label>
+        <input
+          matInput
+          #inputSuscriptionState
+          maxlength="20"
+          formControlName="SuscriptionState"
+          placeholder="SuscriptionState"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>ReasonState</mat-label>
+        <input
+          matInput
+          #inputReasonState
+          maxlength="20"
+          formControlName="ReasonState"
+          placeholder="ReasonState"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>Customer</mat-label>
+        <input
+          matInput
+          #inputCustomer
+          maxlength="20"
+          formControlName="Customer"
+          placeholder="Customer"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>OverDue</mat-label>
+        <input
+          matInput
+          #inputOverDue
+          maxlength="20"
+          formControlName="OverDue"
+          placeholder="OverDue"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>PlaceID</mat-label>
+        <input
+          matInput
+          #inputPlaceID
+          maxlength="20"
+          formControlName="PlaceID"
+          placeholder="PlaceID"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="form-element">
+        <mat-label>Type</mat-label>
+        <input
+          matInput
+          #inputType
+          maxlength="20"
+          formControlName="Type"
+          placeholder="Type"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <div>
+        <button
+          type="submit"
+          mat-raised-button
+          color="primary"
+          style="width: 100%"
+        >
+          Ir al sitio
+          <span class="material-icons"> login </span>
+        </button>
+
+        <br />
+      </div>
+    </form>
+  </div>
+  <div class="column">
+
+    <h1>Parámetros</h1>
+    <hr>
+
+    <app-parameter
+      *ngFor="let parameter of lstParameter"
+      [parameter]="parameter"
+    ></app-parameter>
+  </div>
+</div>
