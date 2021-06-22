@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
+Plantilla para tomar como base para futors desarrollos en Angular para CRM - GlobalHitss 
+
+
 ## Install
 
 Run npm install
