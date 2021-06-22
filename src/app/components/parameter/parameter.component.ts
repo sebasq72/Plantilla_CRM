@@ -48,9 +48,9 @@ export class ParameterComponent implements OnInit {
   onSubmitParameter(post: Parameter) {
     console.log(post);
 
-    this.parameterWs.updateParameter(post.ID_PARAMETER, post).subscribe(
+    this.parameterWs.updateParameterWs(post.ID_PARAMETER, post).subscribe(
       data => {
-        
+
         this.openSnackBar(data.Message, data.State);
         this.router.navigate(["/Home/Test"]);
       },

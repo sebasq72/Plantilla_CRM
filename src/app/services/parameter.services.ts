@@ -24,7 +24,7 @@ export class ParameterService {
     return this.http.post<IParameter>(`/api/Parameter?name=${name}`, null);
   }
 
-  updateParameter(id: number, parameter: Parameter): Observable<ResponseService> {
+  updateParameterWs(id: number, parameter: Parameter): Observable<ResponseService> {
     return this.http.post<IResponseService>(`/api/Parameter/UpdatePARAMETER?id=${id}`, parameter);
   }
 
