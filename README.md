@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
-Plantilla para tomar como base para futuros desarrollos en Angular para CRM - CLARO 
+Plantilla para tomar como base para futuros desarrollos en Angular
 
 
 ## Install
