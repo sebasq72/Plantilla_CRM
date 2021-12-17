@@ -21,6 +21,8 @@ Run `ng generate component components/component-name` to generate a new componen
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Install Material
 
+ng add @angular/material
 
 
